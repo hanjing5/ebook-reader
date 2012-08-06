@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=540" />
+
+    <title>Compatibility diagnostics</title>
+
+    <link rel="stylesheet" type="text/css" href="../tests.css" />
+    <style type="text/css">
+      th {
+        text-align: left;
+      }
+      td {
+        vertical-align: top;
+        font-family: Consolas, Andale Mono, Menlo, Monaco, monospace;
+      }
+
+      #compatibility {
+        display: none;
+        font: 15pt Helvetica Neue, sans-serif;
+        color: white;
+        width: 400px;
+        padding: 20px;
+        margin: 20px 0 0;
+      }
+
+      #compatibility.compatible {
+        background: green;
+      }
+
+      #compatibility.incompatible {
+        background: red;
+      }
+    </style>
+
+    <!-- MONOCLE CORE -->
+    <script type="text/javascript" src="../../src/core/monocle.js"></script>
+    <script type="text/javascript" src="../../src/compat/env.js"></script>
+    <script type="text/javascript" src="../../src/compat/css.js"></script>
+    <script type="text/javascript" src="../../src/compat/stubs.js"></script>
+    <script type="text/javascript" src="../../src/compat/browser.js"></script>
+    <script type="text/javascript" src="test.js"></script>
+  </head>
+
+  <body>
+
+    <a href="../index.html" class="backToGuide">&larr; Back to Guide</a>
+
+    <h1>Compatibility diagnostics</h1>
+
+    <table id="results">
+      <tr>
+        <th>Test</th>
+        <th>Result</th>
+      </tr>
+    </table>
+
+    <div id="compatibility"></div>
+
+    <br />
+
+    <p>
+      Each of these tests is performed by Monocle.Env during the first
+      Monocle.Reader initialisation. The tests are described in
+      <code>src/compat/env.js</code>.
+    </p>
+
+    <p>
+      As a general guide, any <code>supports</code> test should be
+      <code>true</code>, "touch" and "embedded" may be either, and all other
+      tests are for specific bugs needing workarounds -- therefore best result
+      is <code>false</code>.
+    </p>
+
+  </body>
+
+</html>

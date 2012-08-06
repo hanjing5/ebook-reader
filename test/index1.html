@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+<title>E-Reader</title>
+
+<!-- MONOCLE CORE -->
+<script type="text/javascript" src="../src/core/monocle.js"></script>
+<script type="text/javascript" src="../src/compat/env.js"></script>
+<script type="text/javascript" src="../src/compat/css.js"></script>
+<script type="text/javascript" src="../src/compat/stubs.js"></script>
+<script type="text/javascript" src="../src/compat/browser.js"></script>
+<script type="text/javascript" src="../src/core/events.js"></script>
+<script type="text/javascript" src="../src/core/factory.js"></script>
+<script type="text/javascript" src="../src/core/styles.js"></script>
+<script type="text/javascript" src="../src/core/reader.js"></script>
+<script type="text/javascript" src="../src/core/book.js"></script>
+<script type="text/javascript" src="../src/core/component.js"></script>
+<script type="text/javascript" src="../src/core/place.js"></script>
+
+<!-- MONOCLE FLIPPERS -->
+<script type="text/javascript" src="../src/controls/panel.js"></script>
+<script type="text/javascript" src="../src/panels/twopane.js"></script>
+<script type="text/javascript" src="../src/panels/eink.js"></script>
+<script type="text/javascript" src="../src/dimensions/columns.js"></script>
+<script type="text/javascript" src="../src/flippers/slider.js"></script>
+<script type="text/javascript" src="../src/flippers/instant.js"></script>
+<script type="text/javascript" src="../src/dimensions/vert.js"></script>
+<script type="text/javascript" src="../src/flippers/legacy.js"></script>
+
+<!--CSS controllers-->
+<link rel="stylesheet" type="text/css" href="../styles/monocore.css" />
+<link rel="stylesheet" type="text/css" href="tests.css" />
+
+<script type="text/javascript">
+    // this instantiates a book data objects 
+	var bookData = {
+		getComponents: function () {
+			return [
+				'first_epub/cover.html',
+				//'first_epub/text/part1.xhtml',
+				//'first_epub/ads/ad1.html',
+				'content1.html',
+				'content2.html'
+				];
+		},
+		getContents: function () {
+			return [
+//				{title: "Part1 Actual Book", src: 'first_epub/text/part1.html'},
+				{title: "Content Title 1", src: 'content1.html'},
+				{title: "Content Title 2", src: 'content2.html'}
+				]
+		},
+		getComponent: function (componentId) {
+			return {url:componentId};
+		},
+		getMetaData: function(key) {
+			return {
+				title: "Test document",
+				creator: "Aron Woost"
+				}[key];
+		}
+	}
+    
+    // this takes a book objects and parses it
+	Monocle.Events.listen(
+		window,
+		'load',
+		function () {
+			window.reader = Monocle.Reader('reader', bookData);
+		}
+	);
+</script>
+
+</head>
+<body>
+	<div id="reader" style="width:400px; height:600px;">Your Reader</div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Locus search test</title>
+
+    <link rel="stylesheet" type="text/css" href="../../styles/monocore.css" />
+    <link rel="stylesheet" type="text/css" href="../tests.css" />
+    <style type="text/css">
+      #reader {
+        position: relative;
+        width: 300px;
+        height: 400px;
+        border: 1px solid #000;
+        background-color: #CCC;
+        overflow: hidden;
+      }
+    </style>
+
+    <!-- MONOCLE CORE -->
+    <script type="text/javascript" src="../../src/core/monocle.js"></script>
+    <script type="text/javascript" src="../../src/compat/env.js"></script>
+    <script type="text/javascript" src="../../src/compat/css.js"></script>
+    <script type="text/javascript" src="../../src/compat/stubs.js"></script>
+    <script type="text/javascript" src="../../src/compat/browser.js"></script>
+    <script type="text/javascript" src="../../src/core/factory.js"></script>
+    <script type="text/javascript" src="../../src/core/events.js"></script>
+    <script type="text/javascript" src="../../src/core/styles.js"></script>
+    <script type="text/javascript" src="../../src/core/reader.js"></script>
+    <script type="text/javascript" src="../../src/core/book.js"></script>
+    <script type="text/javascript" src="../../src/core/component.js"></script>
+    <script type="text/javascript" src="../../src/core/place.js"></script>
+
+    <!-- MONOCLE FLIPPERS -->
+    <script type="text/javascript" src="../../src/controls/panel.js"></script>
+    <script type="text/javascript" src="../../src/panels/twopane.js"></script>
+    <script type="text/javascript" src="../../src/panels/eink.js"></script>
+    <script type="text/javascript" src="../../src/dimensions/columns.js"></script>
+    <script type="text/javascript" src="../../src/flippers/slider.js"></script>
+    <script type="text/javascript" src="../../src/flippers/instant.js"></script>
+
+
+    <script>
+      function nodeForXPath(doc, xpath) {
+        return doc.evaluate(xpath, doc, null, 9, null).singleNodeValue;
+      }
+
+
+      function goToXPath(cmptId, xpath) {
+        window.reader.moveTo(
+          { componentId: cmptId, xpath: xpath },
+          function () {
+            highlight(function (doc) { return nodeForXPath(doc, xpath) });
+          }
+        );
+      }
+
+
+      function goToSelector(cmptId, selector) {
+        window.reader.moveTo(
+          { componentId: cmptId, selector: selector },
+          function () {
+            highlight(function (doc) { return doc.querySelector(selector); });
+          }
+        );
+      }
+
+
+      function highlight(fn) {
+        var cmpt = null, i = 0;
+        while (cmpt = window.reader.dom.find('component', i)) {
+          var doc = cmpt.contentDocument;
+          var hl = doc.querySelector('.hl');
+          if (hl) { hl.className = hl.className.replace(/\s?hl/, ''); }
+          hl = fn(doc);
+          console.log(hl);
+          if (hl) { hl.className += " hl"; }
+          i += 1;
+        }
+      }
+
+
+      (function () {
+        Monocle.DEBUG = true;
+
+        var bd = {
+          getComponents: function () { return ['pt1.html', 'pt2.html']; },
+          getComponent: function (cmptId) { return { url: cmptId } },
+          getContents: function () { return []; },
+          getMetaData: function (key) { return null; }
+        }
+
+        function init() {
+          var options = { stylesheet: ".hl { background: #FFC !important; }" }
+          window.reader = Monocle.Reader('reader', bd, options);
+        }
+
+        Monocle.Events.listen(window, 'load', init);
+      })();
+    </script>
+  </head>
+  <body class="narrow">
+    <a href="../index.html" class="backToGuide">&larr; Back to Guide</a>
+
+    <h1>Locus search test</h1>
+    <p>
+      You can tell Monocle to go to specific content using an XPath or a CSS
+      selector. This might be useful for implementing search or annotations.
+    </p>
+
+    <p>
+      Go to:
+    </p>
+    <ul>
+      <li>
+        <a href="javascript:goToXPath('pt1.html', '//p[3]');">
+          XPath: Third paragraph of Part I
+        </a>
+      </li>
+      <li>
+        <a href="javascript:goToXPath('pt2.html', '//p[6]');">
+          XPath: Sixth paragraph of Part II
+        </a>
+      </li>
+      <li>
+        <a href="javascript:goToXPath('pt2.html', '//*[contains(text(), \'gremlins\')]');">
+          XPath: First occurrence of 'gremlins' in Part II
+        </a>
+      </li>
+      <li>
+        <a href="javascript:goToSelector('pt1.html', 'h3')">
+          CSS selector: The heading in Part I
+        </a>
+      </li>
+      <li>
+        <a href="javascript:goToSelector('pt1.html', 'p:nth-of-type(3)')">
+          CSS selector: Third paragraph of Part I
+        </a>
+      </li>
+      <li>
+        <a href="javascript:goToSelector('pt2.html', 'p:nth-of-type(6)')">
+          CSS selector: Sixth paragraph of Part II
+        </a>
+      </li>
+    </ul>
+
+    <div id="reader"></div>
+
+  </body>
+</html>

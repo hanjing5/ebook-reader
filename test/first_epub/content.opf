@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookID" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:title>The Kitara Diaries</dc:title>
+        <dc:date opf:event="publication">2011-03-04</dc:date>
+        <dc:creator opf:role="aut" opf:file-as="Lavene, Lexi">Lexi Lavene</dc:creator>
+        <dc:language>en</dc:language>
+        <dc:publisher>ePub Bud (www.epubbud.com)</dc:publisher>
+        <dc:identifier id="BookID" opf:scheme="ePubBud">http://www.epubbud.com/epubs/3/2/3256JSFB/The_Kitara_Diaries.epub</dc:identifier>
+        <meta name="cover" content="cover-image"/>
+    </metadata>
+    <manifest>
+        <item id="cover" href="cover.html" media-type="application/xhtml+xml"/>
+        <item id="cover-image" href="cover.jpg" media-type="image/jpeg"/>
+        <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+<item id="part1.xhtml" href="text/part1.xhtml" media-type="application/xhtml+xml"/>
+
+    </manifest>
+    <spine toc="ncx">
+<itemref idref="part1.xhtml"/>
+
+    </spine>
+    <guide>
+        <reference type="cover" title="Cover" href="cover.html"/>
+        <reference type="text" title="Main Content" href="text/part1.xhtml"/>
+    </guide>
+</package>

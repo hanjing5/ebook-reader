@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+<title>E-Reader</title>
+
+<!-- MONOCLE CORE -->
+<script type="text/javascript" src="src/core/monocle.js"></script>
+<script type="text/javascript" src="src/compat/env.js"></script>
+<script type="text/javascript" src="src/compat/css.js"></script>
+<script type="text/javascript" src="src/compat/stubs.js"></script>
+<script type="text/javascript" src="src/compat/browser.js"></script>
+<script type="text/javascript" src="src/core/events.js"></script>
+<script type="text/javascript" src="src/core/factory.js"></script>
+<script type="text/javascript" src="src/core/styles.js"></script>
+<script type="text/javascript" src="src/core/reader.js"></script>
+<script type="text/javascript" src="src/core/book.js"></script>
+<script type="text/javascript" src="src/core/component.js"></script>
+<script type="text/javascript" src="src/core/place.js"></script>
+
+<!-- MONOCLE FLIPPERS -->
+<script type="text/javascript" src="src/controls/panel.js"></script>
+<script type="text/javascript" src="src/panels/twopane.js"></script>
+<script type="text/javascript" src="src/panels/eink.js"></script>
+<script type="text/javascript" src="src/dimensions/columns.js"></script>
+<script type="text/javascript" src="src/flippers/slider.js"></script>
+<script type="text/javascript" src="src/flippers/instant.js"></script>
+<script type="text/javascript" src="src/dimensions/vert.js"></script>
+<script type="text/javascript" src="src/flippers/legacy.js"></script>
+
+<!--CSS controllers-->
+<link rel="stylesheet" type="text/css" href="styles/monocore.css" />
+<link rel="stylesheet" type="text/css" href="tests.css" />
+
+<script type="text/javascript">
+    // this instantiates a book data objects 
+	var bookData = {
+        
+        //returns an array of all the component ids that are to be accessed 
+        //in linear reading order (ie, like the spine in an EPUB OPF file — 
+        //you don't have to list every component, just the ones that are read in order).
+		getComponents: function () {
+			return [
+				'epub/first_epub/cover.html',
+				//'first_epub/text/part1.xhtml',
+				'content1_short.html',
+				'epub/ads/ad1.html',
+				'epub/ads/part1_middle_ad.html',
+				'epub/ads/video_ad.html',
+				'epub/ads/part1.html',
+				'content2.html'
+				];
+		},
+        
+        //a function that returns an array of nested objects. Each object responds to 
+        //title (a string), and src. src is a string that "addresses" a component and 
+        //(optionally) a location within that component. Locations within components are 
+        //indicated using standard HTML anchor notation — for example, "cmpt1#part3" points 
+        //to an element with an id of "part3" within the component named "cmpt1". 
+		getContents: function () {
+			return [
+//				{title: "Part1 Actual Book", src: 'first_epub/text/part1.html'},
+				{title: "Content Title 1", src: 'content1.html'},
+				{title: "Content Title 2", src: 'content2.html'}
+				]
+		},
+        
+        //takes a component id (from the list returned by getComponents) and returns the 
+        //body text of the corresponding component. If nothing is returned, Monocle will 
+        //wait for the callback to be invoked (ie, by an asynchronous operation). Either 
+        //call the callback with data, or return data, but not both.
+		getComponent: function (componentId) {
+			return {url:componentId};
+		},
+        
+        //takes a string "key" and returns the value of that metadata for this book. 
+        //There is not yet any standardized list of possible keys -- we'll just see what 
+        //happens for a bit. Note that if nothing will go wrong if you return null or an 
+        //empty string for any requested key.
+		getMetaData: function(key) {
+			return {
+				title: "Test document",
+				creator: "Aron Woost"
+				}[key];
+		}
+	}
+    
+    // this takes a book objects and parses it
+	Monocle.Events.listen(
+		window,
+		'load',
+		function () {
+			window.reader = Monocle.Reader('reader', bookData);
+		}
+	);
+</script>
+
+</head>
+<body>
+	<div id="reader" style="width:400px; height:550px;">Your Reader</div>
+	<video>
+  
+  <source src="epub/ads/nook.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+
+  Video tag not supported. Download the video <a href="movie.webm">here</a>.
+<video>
+</body>
+</html>

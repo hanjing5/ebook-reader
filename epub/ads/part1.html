@@ -1,0 +1,388 @@
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" />
+<title>The Kitara Diaries</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>551062.html</title>
+<script type="text/javascript">
+function grayscale(image, bPlaceImage)
+{
+  var myCanvas=document.createElement("canvas");
+  var myCanvasContext=myCanvas.getContext("2d");
+
+  var imgWidth=image.width;
+  var imgHeight=image.height;
+  // You'll get some string error if you fail to specify the dimensions
+  myCanvas.width= imgWidth;
+  myCanvas.height=imgHeight;
+  //  alert(imgWidth);
+  myCanvasContext.drawImage(image,0,0);
+
+  // This function cannot be called if the image is not rom the same domain.
+  // You'll get security error if you do.
+  var imageData=myCanvasContext.getImageData(0,0, imgWidth, imgHeight);
+
+  // This loop gets every pixels on the image and
+    for (j=0; j<imageData.height; i++)
+    {
+      for (i=0; i<imageData.width; j++)
+      {
+         var index=(i*4)*imageData.width+(j*4);
+         var red=imageData.data[index];
+         var green=imageData.data[index+1];
+         var blue=imageData.data[index+2];
+         var alpha=imageData.data[index+3];
+         var average=(red+green+blue)/3;
+   	    imageData.data[index]=average;
+         imageData.data[index+1]=average;
+         imageData.data[index+2]=average;
+         imageData.data[index+3]=alpha;
+       }
+     }
+
+    if (bPlaceImage)
+	{
+	  var myDiv=document.createElement("div");
+	     myDiv.appendChild(myCanvas);
+	  image.parentNode.appendChild(myCanvas);
+	}
+	return myCanvas.toDataURL();
+  }
+</script>
+<style type="text/css">
+/*<![CDATA[*/
+   <!--
+#toc,
+.toc,
+.mw-warning {
+        border: 1px solid #aaa;
+        background-color: #f9f9f9;
+        padding: 5px;
+        font-size: 95%;
+}
+#toc h2,
+.toc h2 {
+        display: inline;
+        border: none;
+        padding: 0;
+        font-size: 100%;
+        font-weight: bold;
+}
+#toc #toctitle,
+.toc #toctitle,
+#toc .toctitle,
+.toc .toctitle {
+        text-align: center;
+}
+#toc ul,
+.toc ul {
+        list-style-type: none;
+        list-style-image: none;
+        margin-left: 0;
+        padding-left: 0;
+        text-align: left;
+}
+#toc ul ul,
+.toc ul ul {
+        margin: 0 0 0 2em;
+}
+#toc .toctoggle,
+.toc .toctoggle {
+        font-size: 94%;
+}@media print, projection, embossed {
+        body {
+                padding-top:1.000000in;
+                padding-bottom:1.000000in;
+                padding-left:1.000000in;
+                padding-right:1.000000in;
+        }
+}
+body {
+        text-indent:36.000000pt;
+        font-size:11.000000pt;
+        font-family:'Garamond';
+}
+table {
+}
+td {
+        border-collapse:collapse;
+        text-align:left;
+        vertical-align:top;
+}
+     -->
+/*]]>*/
+</style>
+</head>
+<body>
+<div><!-- ======================================================= -->
+<!-- Created by AbiWord, a free, Open Source wordprocessor.  -->
+<!-- For more information visit http://www.abisource.com.    -->
+<!-- ======================================================= -->
+<div>
+<p style="text-align:center">GATEWAY OF DRAGONS</p>
+<p style="background-image:url('bnad.jpg')">Hundreds of Realms empty out into the Gateway Of Dragons, archways of starlight surround the main dinning room. Archways that deliver back and forth across the continuum. This prestigious restaurant rates as the finest in all the 423 Realms.</p>
+<!--<img id="myImage" src="bnad.jpg"
+   onload="javascript:grayscale(this, true);"></img> 
+</img>-->
+<p>A simple murmured incantation helps me leave my Realm by a bubble of atmosphere, shaped like a diamond. Cold and lifeless, this bubble leaves tingles running up my spine, a thousand tiny fingers, massaging out my worries. In a moment, though, it’s over; the bubble plunks me in one of the entrances to the Gateway Of Dragons.</p>
+<p>In the mahogany colored room, illumination given by starlight lamps, brought in from the Realm of Starlight. Twinkling in mystery, the lamps appear to be moving throughout the room, when the stars, in actuality, are pulsing within. Private booths, hidden by long velvet sheets of wild orchid purple, tied back with a cord of carefully woven sunshine, are tucked into archways and crevices. A hush overwhelms the thick air, amid the silence comes a soft crooning from nowhere and everywhere all at once.</p>
+<p>The hostess, Mira Cleo, strolls over, a huge, overly flashy smile on her ashen face. Scarlet lipstick assaults her lips like blood across the moon. Eyes of powder blue hypnotize the dancing tendrils of blonde hair that cascade over her forehead. Sunlight has never touched her bony form. "Greetings, Kitty," she says to me, her voice violates my eardrums, nails on a chalkboard. She speaks only Latin, a language I happen to be fluent in, thank the gods. "Etheain has not arrived yet, do you wish to be seated?"</p>
+<p>"Yes, Mira, just send him over when he arrives." Mira nods to me, and I head over to our usual table. It sits just beyond a wooden, crescent shaped archway, shrouded in royal velvet, alight with starlight. For nearly two centuries, we have been meeting here. Always for simply a drink, I am forever doomed to be 19, he to be 22. Dear Etheain came up with this splendid idea, since we really have nothing better to do with an eternity of Friday nights.</p>
+<p>In the booth beside me, I hear Jeneva and Ricard arguing pitifully, as always. Jeneva claims that he never listens, Ricard states that he would listen, if he could hear. Deafness plagues him. Perhaps, if they did not share the same body, they’d be able to see eye to eye. In the booth across from me sits Deej, he stands at a thrilling height of three inches. Wearing his usual black top hat, and midnight blue overcoat, he raises his glass in a toast to himself, as he mumbles. Fire red hair deepens the rosy color of his cheeks against his freckled face. An Irish accent floats with his words, "Damn those mortals, always wishin’ and wishin’. All I’m wishin’ for is a refill."</p>
+<p>The scent of dusk drifts to my nose, the cider-sweet smell of the air just before dark comes. Instantly, I know that Etheain has arrived. He swaggers around the corner, and slides into the booth beside me. Leaning over, he gently kisses my cheek. "Hello, Kitten," he whispers. He instinctively turns his head as Deej grumbles, slightly louder about ‘those damn mortals’. Etheain hides his smile, born a mortal, given the power of immortality by his ability to travel the Realms. "I hope you didn’t wait long." I shake my head, I never have to wait long for Etheain.</p>
+<p>We hadn’t even the time to begin our normal chit chat before our waiter, a young elf, with pointy ears and a devious grin, appears beside us. Neither of us notices his quick approach, that’s the problem with the fey. "I am called Flame, I will be your server this evening." His tight silver pants glimmer in the lights, while the vest he wears shimmers from blue to gray as he moves. Atop his head sits a poof of translucently silver hair, seen only through the dim sparkles of starlight coming from the lamp above. "What would you like?"</p>
+<p>As always, Etheain answers for me, as well as himself. "My stunning companion will have a Dragon’s Blood, and I shall have a Dwarves Tongue, on the rocks. Do hurry, we only have an eternity." Flame nods, scrawls our order down and vanishes from sight. "Amazing," Etheain whispers. Reaching for my hand, he smiles. "How was your week, my love?"</p>
+<p>My Love, ancient as the clouds, strangely new, something about it, tonight. He has called me my love since we met, nearly a millennium ago, in my realm. "Pleasant enough," I reply, trying to sound peaceful. We both know that I have a more stressful job then I let on. He smiles at me as I lean closer, to kiss his cheek. Something in his response makes me linger, something in his reaction makes me want to slide closer, yet I pull away. "How was yours?"</p>
+<p>A devious smile adorns his lips as he replies, "I found a hidden realm, can’t remember the spell, though." I giggle, not because of his silly face, but because he did the same thing to me, only he forgot how to get back to his realm. "I don’t think the occupants wished to be found. They threw fruit at me." Again, I giggle. Deej looks up from his drink, and begins swearing under his breath, most likely about me, disturbing his drink. "On the bright side, I have a lovely fruit salad at home." An incredibly cheesy smile completed the sentence, I had to laugh harder. Neither of us see Flame as our drinks appear at the table. I take a sip. Made from the juice of the Gandolf plant, and the sap of the Dragon’s Tree, the sugary sweet taste captures your tastebuds in rapture. Etheain’s order, Dwarves Tongue, consists of the leaves of the Netra plant, shaped like dwarves tongues. The tartness could pucker one’s lips for weeks at a time, however, Etheain drinks it as if it’s nothing.</p>
+<p>I am exhausted from my week, and I can tell Etheain’s shoulders are sagging. Fatigue by his near death-by-peaching saddens his eyes. I suggest we leave, thankfully he agrees. I am advanced in my magik skills, but not advanced enough to take on Etheain Meriwhether, one of the most powerful sorcerers in all the Realms. Etheain’s tab picks up the bill, since his power can be used to pay, out of ours combined. On our way to the portal, Etheain slips his hand into mine. Never before has he been so forward. Just as we reach the exit, he pulls me to a stop. Out of the corner of my eye, I see Deej jump down from the table and stumble toward the same exit. "My love, come to my Realm." I cock an eyebrow, unsure of his meaning. "Join me tonight, join me forever." Something in me leaps, my heart hits my throat, pounding wildly. I choked back the desire to burst out yes. Just as I open my mouth to speak, he whispers. "Please, Kitten. I have waited nearly a millennium for you, don’t make me wait another." Deej brushes past my ankles, grumbling about those "damn mortals".</p>
+<p>In that exact moment, I knew why I have come here every Friday night for two hundred years. "Yes, Etheain, I will." His eyes overflow with incredible disbelief and joy as he pulls me close and kisses me, I shall savor it forever. We disappear into our own little atmospheric bubble, and for once in my life, the tingling never stopped.</p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center">KEEP ME COMPANY</p>
+<p>From the outside, it looked cramped, this she knew, but inside the tree was cozy and comfy. Kitara stormed up to the door and swung it open with such force that the doorknob dented the wood of the tree-house. The tree trunk had been hallowed out millions of years before, when a child named Kitty came to the realm as the Soul-Watcher. Seventy-five feet in circumference, the tree trunk held all of their meager possessions nicely, with a ceiling of twenty feet, their bed hidden away in a loft that hung halfway to the roof. Kitty grumbled to herself and turned to inspect the dented wall. Waving her hand hastily over the hole, it dissolved, leaving no mark.</p>
+<p>Making her way past the doorway, she closed it against the wind. Into the kitchen, she slipped, drenched from head to toe. The kitchen table, generally tidy, sat cluttered with maps, colored pencils, measurement tools, and spells scrawled in supremely masculine handwriting. Etheain’s workspace, a million years of clutter and mess. Most days the gnomes would organize the table, along with the rest of the house, but not today, they had left it just as Etheain had that morning.</p>
+<p>She looked around at the rest of the hut, which shone like the water of the lake, the gnomes had done their job here, at least. Water dripped along the floor as the young soul-watcher waddled across the room, to the fireplace. Peeling off her drenched dress of lavender satin, she hung the limp cloth on the fireplace hook to dry. The warmth of the firelight danced on her bare flesh as she reached for the oversized shirt of Etheain’s she often wore to bed. Pulling it over her head, she twisted her waist-length, crimson hair into a tight knot, and wrung the water from it. Kitty maneuvered her way across the dripped upon floor, sick and tired of being cold and wet by the end of every day,. Crossing the river on the way home should have gotten easier after two million years, but it didn’t. The stepping stones always seemed to fall from beneath her feet, and she inevitably plunged into the water.</p>
+<p>Moving across the room to the staircase, she scaled the eleven stairs to the loft, where she plopped down at her vanity. A hundred strokes to each side of her head lent her hair a silky smooth luster, and helped it to braid easily. Every night, before Etheain came home, she tried to figure out how he used his toothbrush. He’d been using it for as long as she’d known him, but she’d never needed one. It looked terribly painful to Kitty, placing a stick with bristles, sharp as pine needles, into your mouth and scrubbing your teeth with it. With Etheain away at work, Kitty had once sent Kale, her gnome helper, to the mortal realm for one of the contraptions Etheain called a toothbrush. Now, at night, before Etheain got home, Kitty tried to see what mortals found so wonderful about the plastic sticks.</p>
+<p>She sat in front of her mirror, and scrubbed at her already perfect teeth. Still, it made no sense to her, why scrub her teeth with a stupid toothbrush. She opened her mouth wide to inspect her progress, and found nothing different. Setting the toothbrush back in the drawer, Kitty began inspecting her milk-white skin. Unblemished, perfect cheeks, shone radiant against the scarlet flames of hair, her full lips glistened a spring pink that added a hint of color to the oval face that glowed with moonlight. Deep pools of emerald green burned into the mirror as she studied the reflection. Beautiful. Etheain had called her, A Princess, gone unspoiled. Frowning at herself in the mirror, she pondered the word, beautiful. What could it mean to be beautiful? Putting others before you, yes, that she knew. Once, she asked Etheain to define beauty for her. He had gazed down at her, laying on the bed beside him, and cocked an eyebrow. "No one’s ever asked me that before," he replied. "I suppose it means someone who doesn’t think twice about helping someone, someone who loves to live, someone who understands the magic of everything." He brushed a strand of hair from her face, his touch as soft as a butterfly’s kiss, "You, Kitten, are beautiful."</p>
+<p>Rising to her feet, she moved back down the spiral staircase that meandered around the walls of the tree. Just as she reached the bottom of the cedar steps, the door opened, much more gently then before. A cold breeze swept the room, causing the fire to flicker in protest. Shadowing the doorway stood Etheain, at six foot, to Kitty’s five-seven, dark hair against olive-toned skin, dark eyes that pierced the air, lanky, built to travel the Realms. He shoved the door shut in his wake, and moved out from underneath the loft above the kitchen, to the stairs where Kitty stood. "Hello, my love. Did you have a pleasant day?" He bent to kiss her gently on the lips, hand on her shoulder.</p>
+<p>"Naturally, my dear," Kitty replied, brushing her hand against his. "I trust you did, as well." Etheain nodded, as he started back towards the kitchen table. Sitting down at his maps, he began charting the day’s adventures, filing spells under the correct realms. Kitty moved across the room, almost floating, to her apothecary table. Etheain’s eyes followed her graceful form across the room to the squat table. Her slender body shape rounded at the hips and the sleek, fluid movements, perfected over years, reminded Etheain of a cat. Every night, she counted her ingredients and potions. Before she ran out, she would ask Etheain to get more, since she never left her realm, with the exception of the occasional restaurant. "Darling, I was thinking I’d go to the fey worlds for some ingredients, unless you are."</p>
+<p>Etheain lifted his face quickly to gaze over the ten feet between them. The crystalline emerald eyes gleamed in the firelight. He said abruptly, "No, no, you mustn’t leave. I was planning on going soon anyway, what do you need?" He would travel to the farthest fey world for whatever she needed.</p>
+<p>"Witch hazel, and elven root. She pushed herself up from the ground, then strolled over to Etheain. She reached him, just as he scrawled one final note in his illegible handwriting. "You are tired," she muttered, placing her fingers on his temples. "You have a headache as well." Her fingers began to move in a circular motion, and Etheain exhaled heavily.</p>
+<p>He reached up and captured her delicate hand in his. "You’re too good to me, baby." Kitty’s sprite-like giggle filled his ears as he pulled her into his arms. "I’m exhausted, how about you?" She shook her head. "Then keep me company." With that, Etheain swept her into his arms and carried her, easily, up the stairs to the loft.</p>
+<p>The feather mattress sat on an intricate fey-designed bed frame of cedar-oak, a fey wood, overflowed with blankets and sheets of lilac violet, emerald green, navy, sky, ocean, and moonlight blue. Setting Kitty on the bed, he began to unbutton his shirt. While she turned down the bed sheets, he did that silly "Toothbrush" tradition. Kitty sat down on the bed to watch with interest.</p>
+<p>He put the toothbrush away in its cup, then turned to face Kitty. "Are you ready for bed, my love?" Kitty looked at her hands for a moment, then lifted her gaze to his face. "What is it?"</p>
+<p>She rose to her feet and slowly started to the closet, opening it, she stuck her head into the dark, and peered around. Etheain stepped out of her way as she came toward him, then dropped to her knees. The floor still smelled of cedar, as did everything else. She inspected the space under the bed, then tilted her head up to gaze at him. "It’s okay, we can go to bed now."</p>
+<p>"My love," Etheain said, pulling her up from the ground. "You would think that you’d be safe after two million years." Kitty watched as he climbed into bed. " The fey are not going to play any tricks on you, Kitten." She fell into his arms, as he wrapped her in the ocean of blankets. Nestled softly in Etheain’s embrace, Kitty discovered sleep she hadn’t known she longed for. Etheain’s kisses died away on her forehead as she succumbed to dreams.</p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center">TO BE FREE</p>
+<p>Never before have the shadows danced so slowly, or the moonlight been so dulled by storm clouds, as Kitty made her way along the jagged cliffs. Cold stung her bare arms, biting viciously at her deadened body. Long had dawn been gone from her realm, an eternity it seemed, since she’d come back through. If she had only stayed in her realm, he would be beside her.</p>
+<p>Sitting down on the edge of the cliff, she stared hard at the ground. Below her stretched endless fields, cluttered with rocks, caves and holes. Gnomes bickered and bartered for glimmering stones, fairies fought for sweet flowers, while trolls watched in interest, their glowing eyes moving from one fairy to another. But none of it mattered.</p>
+<p>Letting herself drift backwards through time, she felt again, the thrill of being able to take a day off, something she had never done. Without waking Etheain, she left the house very early, long before he began to stir. Across the darkened landscape, she crept, careful not to stir the sleeping flowers. It wasn’t time for them to awaken, not yet. Clouds drifted lazily over the ground, calling out to gnomes and faeries alike, the fog whispered that they must gather what they could and retire.</p>
+<p>Waves cascaded over her feet as Kitty took herself to the gateway Etheain had designed. A circle of stones, ten feet in diameter, lay on the ground. Just beyond that rose the Circle of Protection, blocking the gateway so evil could not pass through. Stepping over the boundaries, Kitty pulled the slip of paper from her satchel. As she read the intricately feminine handwriting, the wind began to swirl around her. The emerald dress she wore billowed up, just below her knees, her moccasins showed amber against the grass. Scarlet hair fluttered out in gravity defying wisps, as her voice rose in strangled Latin.</p>
+<p>She’d seen Etheain do the same spell a thousand times, but never before had it happened to her. Beneath her feet, colors began to helix, violent against the early predawn. Kitty squinted her eyes, terrified that she had spoken the wrong incantation. She felt the ground quiver, shake, then give, and she fell straight through the center of the circle.</p>
+<p>Landing hard, Kitty screamed out in alarm. Crumpled on the ground, she lay still, panting. "Who is it, Ava?" a tiny voice whispered. "Is she alive?" Moving slightly, Kitty managed to flop over, and stared at the sky. She didn’t believe she had actually fallen from there.</p>
+<p>Another tiny voice spoke, this time, in her ear. "What’s your name?" it asked. When Kitty turned her head, she found herself facing a wee sprite-like creature with glittery green wings and long honey-blonde hair. Kitty’s eyes widened in surprise, and her mouth dropped open.</p>
+<p>"Kit- Kit- Kit- Kitty," the young soul watcher stammered, "From the Realm of Mists." At that moment, two other creatures, much like the first, joined her. One had daring red wings, with flames flickering within, fire-red hair and charcoal eyes that burned unholy fire. The second’s wings were a watery blue, her cornsilk blonde hair contrasted her icy blue yes. "What are you?" Kitty asked in an awed voice.</p>
+<p>Giggles all around, the green one spoke first, "We’re Mischiefs," she said. "I’m Ava," she motioned to the red, "That’s Nixie," and then the blonde, "and Ivy." Finally finding the strength to sit, Kitty pushed herself up.</p>
+<p>Only then did she see the young man leaned against a rock on the far side of the clearing. His piercing blue-green eyes laughed with unspoken humor. "Back away ladies," he said, his voice calming. "Let the girl breathe." Instantaneously, the three Mischiefs backed up, but continued to hover nearby. As the stranger stood, charcoal hair fell in his eyes. An annoyed noise escaped his lips as he pushed it from his face. Agile movements showed grace, and catlike senses. Even as he stepped across the few spans, his eyes took her in, every glance scrutinized her, up and down, judging her intent. Finally, he outstretched a hand, with a warm smile. "Troi Garrison," he said, a hint of amusement on his voice.</p>
+<p>Kitty reached for his hand, captivated by this stranger. His dark colored hair shone with vitality, his eyes matched the clouds heavy with rain, a black charcoal gray, full of enchantment. "Kitara Arcadia," Kitty replied. "They call me Kitty."</p>
+<p>Troi’s face flickered as a smile crossed it, he hadn’t let go of her hand. Finding himself taken completely by surprise, Troi’s breath left him as he looked in her emerald eyes. Looking up at him, she must have been at least 5’6", not so much shorter than his 5’8". "Who’s they," he questioned. "Your family?"</p>
+<p>At first he thought he imagined the disappointment in her eyes, it flickered quickly. "I guess you can call them that. There’s Tyla, my dragon guardian, Kale, my helper, and Etheain, he’s well, he’s something else." His hand still held hers, strangely comforting, soft, welcome.</p>
+<p>"Etheain Meriwhether?" Troi asked. Kitty looked surprised that he knew of Etheain. "Etheain comes here for supplies all the time." Realization dawned in Troi’s eyes. "You’re Kitara!" She nodded, smiling brightly. "Theain said you never left your realm!"</p>
+<p>A soft smile played on her lips. "I wanted to see something magical, and Etheain always says great things about the fey worlds." Something about him made her comfortable, she didn’t want to let his hand go.</p>
+<p>Out of nowhere came Ava’s voice, the bubbly mixture of giggles and jokes. "You wanna show her the cave, Troi, huh?" Ava asked, buzzing about his head. "That’s magical."</p>
+<p>"Troi, you can let go of her hand, ya know," Nixie said, hovering just above their fingers, "Come on, you can take her to the cave." The young Mischief arched her eyebrows suggestively, the clicked her tongue a few times. "Who knows, she may," Nixie winked as she finished, "enjoy it."</p>
+<p>Dropping Kitty’s hand, Troi snatched Nixie from the air, and flicked her with his finger. "Ignore Nixie, she didn’t get her century sleep." Nixie went flying across the clearing, smacked into a starlight tree, shaking the glimmering leaves, then flopped down on the ground, snoring. "The poor little mischief is exhausted," Troi finished, "she’ll sleep for a good fifty years if you don’t wake her." Ava and Ivy exchanged amused glances. "You wanna see something magical? I’ll show you the cave."</p>
+<p>"What’s the cave?" Kitty asked as she began to follow Troi over to the weed strewn path.</p>
+<p>"You’ll see," Troi replied, ducking to dodge a low hanging branch. Turning back, he said, "Watch for the branch," Kitty walked right beneath it, "or not," he finished, grinning. Kitty flashed him a radiant smile.</p>
+<p>Flashing back to the cliff face, a loud thump startled Kitty from her memories. Tyla slumped down beside her, over looking the fields of emerald below her. Silently, Kale slid from the dragon’s amber back and plopped down on the stone. "’Ello, me friend," Kale commented, standing at an erect six inches. "Didn’t see ya yesterday," he continued, "Sonah sent me to ask if you was hungry."</p>
+<p>When Kitty didn’t respond, Kale moved to touch her leg, but Tyla reached out a swept him back. "Kitten?" Tyla questioned, "What’s wrong?"</p>
+<p>Silence overflowed after Tyla spoke, not even the faeries giggled in the trees. Drifting back through the capsules of time, Kitty lost her grip on the present, and again she fell into the fey world.</p>
+<p>Before the mouth of the cave sat a little lump, that heaved with breath. Above them, glimmered the starlight trees, each leaf aflame with astrology. Flowers beneath their feet smelled of cider, and witch hazel grew in abundance. Breaking the silence, Troi called out to the little lump, "Quincy! Hey Quincy!" It began to stir. "Quincy, wake up."</p>
+<p>Slowly, the creature lifted its head to glare at them. "What do you want, Troi?" he growled, sitting upward. "I was in the middle of a great dream."</p>
+<p>A type of snort came from Troi’s lips as he stepped forward. "Trolls don’t dream." Kitty’s breath caught in her throat; never had she been face to face with a troll. "I want to show a friend of mine the cave," Troi continued, "May we pass."</p>
+<p>"I dunno," Quincy replied, eyeing Kitty suspiciously. "We don’t usually let Gatewayers in." For the first time, Kitty had become a Gatewayer, someone who travels the realms. She giggled, "What’s the Gatewayer find so funny?" Quincy asked Troi pointedly, his eyes slants in his dark face.</p>
+<p>Surprised that he wouldn’t speak directly to her, Kitty stepped forward. "I am a person, speak to me as one!" she exclaimed, in a far louder voice then she had been accustomed to. Backing down suddenly, she continued softly, "Forgive me. I speak out of turn."</p>
+<p>Troi cocked an eyebrow at Quincy. "You may enter, but watch her carefully." The young man grinned, then nodded and took Kitty’s hand. "Mind your herbs; the sprites are hungry," Quincy’s voice called out as they vanished into the darkness.</p>
+<p>Along the passageway, torches flickered in the breeze, and tiny voices echoed in the shadows. Ava and Ivy weren’t allowed to enter the cave. No one had told Kitty what it held, but she followed Troi. His hand linked with hers; she felt safe with him. "Why is it that you’ve never been here?" Troi questioned, ducking to and from to avoid low hanging stalactites.</p>
+<p>It took a moment for Kitty to review her reasons. Etheain had told her a thousand times not to leave the realm; she had work to do. After one million-something years, though she got bored. "Etheain wouldn’t let me," she said finally, her voice hushed against the echo of the passageway. "He said it wasn’t my job."</p>
+<p>Before them stood a gigantic wooden door, with a metal latch. Once more, Kitty’s breath caught in her throat. Tyla could fit through the doorway, with room to spare. Troi spun to look at her. "Why do you let him do that to you?" For a moment, Kitty looked confused, exasperated. Troi continued, "Boss you around like that, I mean. When he’s here, he speaks of you as if he owns you. You deserve better than that."</p>
+<p>Stopping directly beside him, Kitty turned to glare. "What makes you think you know me?" she snapped. Astonished, Troi stepped back. Instantly, Kitty muttered, "Forgive me, I speak out of turn."</p>
+<p>"See what I mean?" Troi exclaimed, grasping her shoulder. "Etheain teaches you think like that, but you deserve better." For a moment, Kitty felt a connection with Troi, a whispered word, a long forgotten feeling, something that brought tears to her eyes. "Come here, I want to show you this," he whispered.</p>
+<p>Slowly, the door opened, to reveal a thousand shimmery lights. Colors danced in melancholy intensity, their multitude so blurred that they swirled together. Unaware of the world around her, Kitty stepped forward, he eyes exploring the large cavern. "What is this place?" she asked.</p>
+<p>A slight smile played on Troi’s lips as he followed her into the gigantic room. Amber light flickered across her face, flaring her scarlet hair with undeniable fire. For a second, Troi recognized her, someone from the past, someone he once knew, then it dissolved. "It’s called Desin Hefiti," Troi replied in ear, his face inches from her neck. "This is where the Garrison’s are born and given instructions."</p>
+<p>Kitty’s eyebrows arched, "Instructions?" she questioned, "Instructions for what?"</p>
+<p>Hesitantly, Troi backed away from her. "We protect people in danger, one person, one lifetime, one destiny." Silence overcame the duo, "I don’t know who I was sent for, I just know I haven’t been needed yet." Amazed eyes turned to stare at him. "I haven’t gotten my instructions yet." The lights blazed around them, turquoise, amber, azure, emerald, copper, fire red, and charcoal, all mixed together in swirling eternity as Kitty reached out and touched Troi’s hand.</p>
+<p>First, they heard Ava’s bubbly, brook-like laughter, then Ivy’s more subdued giggles. Strolling from the mouth of the cave, the duo saw Nixie. Hovering between the two of them, arms crossed, scowling. "Nixie," Troi exclaimed, obviously surprised, "you woke up on your own!" More hysterical giggles from Ava forced Nixie’s shoulders to hunch even more. "What happened?" Troi inquired, stepping over to cup Ava in his hands, muffling her giggles.</p>
+<p>Quietly, Nixie began to mumble, but, as Ava’s laughter grew louder, she spoke up. "A troll sat on me!" Merriment danced in Troi’s Tayrah-colored eyes, as Ava’s giggles bubbled from cupped hands. "So I woke up," Nixie finished, sinking lower in the air.</p>
+<p>"Maybe you should watch where you fall asleep," Ivy interjected softly. Nixie scowled at her out of the corner of her eye. "It’s just a suggestion," Ivy finished, flitting backward protectively.</p>
+<p>Out of nowhere, Kitty spoke, "I should be getting home," she said softly, "Before Etheain finds out I’m gone." Troi nodded, concern filling his eyes, buckling his frame. "I don’t want him to be angry." Silently, Troi offered his hand. Allowing Ava to flit away, yelling subjectively in a language Kitty couldn’t begin to understand. Continuing to ignore Ava’s protests, Troi led Kitty back in the direction they had come, back toward the clearing.</p>
+<p>For the first time, Kitty noticed the Gateway stones in a circle in the clearing, and she sensed the Circle of protection around them. Ava, Ivy and Nixie nested themselves in the trees, to rest after the long travel from the cave to the clearing, while Troi walked Kitty towards the circle. As they approached the center, the ground began to shake violently, and colors swirled above them. Yelling a word Kitty had only heard when Etheain had been very upset, Troi swept her aside and sheltered her body with his own as they fell to the soft verdant grass.</p>
+<p>A flash of blinding light cascaded over their still forms, then a loud thump sound behind them. Nixie’s little voice exploded in the silence, "Etheain!" Troi’s heart leapt into his throat, Kitty’s eye widened in disbelief, and then all fell silent.</p>
+<p>Pushing himself from the ground, Troi slowly pivoted to look at Etheain, frozen to the spot, staring in disbelief at Kitty. "Listen, Etheain," Troi began, willing to explain.</p>
+<p>"Shut up, Troi"," Etheain interrupted, his unwavering gaze upon Kitty. A stonily icy hand reached down and brutally yanked her to her feet. "Do you have any idea how much trouble you could’ve caused?" Etheain asked, trough clenched teeth. "The entire universe rests on your shoulders; you can’t just walk away from it!" Tears sprouted in Kitty’s downcast eyes. "Damn you! Look at me!"</p>
+<p>Instantly, Troi stepped between them, ripping Etheain’s hand from her arm, Kitty shrank back. "Stop it, Theain," Troi demanded, reprehensibly. "You know as well as I do that you were wrong!" Troi yelled, eyes clouding with anger. "You deserve to pay for the last seven hundred years, Etheain. Not even Kitty can protect you from them!" he finished, stepping toward him. "Go on, Etheain! Tell her why you’ve shared her bed; tell her why she can’t leave!" Etheain’s brown eyes sparked with anger as Kitty turned to face him. "Tell her how you weren’t meant to immortal."</p>
+<p>Etheain yanked his arm from Troi’s grip, and scowled at his friend. "Shut up, Troi!" Etheain exclaimed. Abomination showed in Troi’s eyes. "Don’t say anything more!" he finished.</p>
+<p>Sniffles from behind Troi caused him to turn to gaze at Kitty. Her knees met her chest, arms around her legs, face buried in her arms. Turning back to Etheain, Troi’s eyes flashed. "No," he said, glaring at Etheain, "No, I’m not letting you control her, not anymore." Vehemence echoed in his voice as he sheltered Kitty from Etheain.</p>
+<p>Suddenly, Etheain thrust his hand out, and an unseen force whacked Troi directly in the face, flinging him back. Troi fell heavily against a tree. Without a word said, Etheain snatched Kitty from the ground. "No, Etheain," came the wavering protest, as Troi shoved himself off the tree. Amazed, Etheain stared at the young man, then yanked Kitty toward him. "Tell her how being with her shields you from Them. The Troika can’t touch you if you control her!" Troi continued, "She’s Their blood, They can’t touch you!" Etheain swapped him against the tree again. "She knows now, Etheain, you can’t keep her in check," Troi shouted. "Let her go," he growled, starting toward them. Again, Etheain flung his hand, and Troi flew backward, knocking leaves off the tree. Grasping Kitty’s arm tighter, Etheain yanked her toward the center of the circle. "She knows," came Troi’s wounded voice, struggling to his feet. With a twitch of his finger, Etheain’s hand flew from Kitty’s arm, and Kitty ran towards Troi.</p>
+<p>Unexpectedly, Etheain clenched his fist and the young soulwatcher flew backward, slamming against the ground. From her lips escaped a muffled cry. Troi responded instantly, moving forward as Kitty tried to struggle to her feet.</p>
+<p>Etheain’s outstretched hand pointed down at her, sending shock waves down at Kitty, pushing her down to the ground. Her screams penetrated the forest of starlight all around, echoing into Troi’s soul. Once more, he moved to intercept Etheain, when the screaming stopped.</p>
+<p>Aghast, Etheain looked down at his feet, Kitty’s chest heaved with exhaustion, and her eyes widened with trepidation. At that moment, Etheain understood the weight of injuring the Troika’s blood. Suddenly, the air felt heavier, and suffocating, as electricity crackled against them. "They know," Troi whispered audibly. In a blinding flash, Kitty’s pain disappeared, along with Etheain.</p>
+<p>As she watched, Troi fell to his knees, gasping in agony. In a moment, Kitty knelt by his side, her hands trying their best to heal him. "I lied to you," Troi muttered, his breath coming in short gasps. A quizzical look from Kitty urged him to continue. "I knew who I had to protect; it was you. And I knew-"</p>
+<p>"That I wouldn’t believe you," Kitty finished, pushing hair from his pulsing gypsy eyes. "You risked your life for me, Troi," her voice drifted on the wind, soft against his mangled body.</p>
+<p>His breath came short as he struggled to fight the sleepy cloud that surrounded his being. "One person, one lifetime, one destiny," he whispered, as his eyes formed slits in his exhaustion. "I’m just happy that my destiny was you," he finished, just before he fell asleep on the soft grass of the clearing.</p>
+<p>"We’ll take care of him," came Ivy’s timid voice from nearby. "you should be going home," the little Mischiefs appeared from a tree.</p>
+<p>Next, came Ava, "Don’t worry, no trolls will sit on him." Hysterical laughter erupted from the wee Mischief.</p>
+<p>"I’ll get you, Ava!" Nixie shouted from somewhere below the trees.</p>
+<p>Without another word to any of them, Kitty strolled to the center of the gateway, and repeated the incantation. Again, colors swirled beneath her feet, and the ground fell from underneath her. This time, she landed on her feet, although shakily at first. Exiting the circle of stones in her Realm, she exhaled, breathing in a deep breath of cool twilight air.</p>
+<p>Now, she sat on the cliffside, watching the faeries and elves bicker over flowers and sweet smelling grasses. Tyla surveyed the sun come rolling over the horizon, and the creatures below scattered like leaves in the wind. Infinite silence fell over Kitty as she tried to picture Etheain the way she saw him earlier, in the fey world. Every word that escaped his lips had a hidden meaning, an order in disguise. She knew what happened to him, she’d known the moment he disappeared. The Troika had taken him, to put him on trial, he would be stripped of his power to travel the realms, Kitty would never see him again.</p>
+<p>Standing, the young girl moved toward the pathway once more, leaving Tyla and Kale to watch the sunrise. Down past Vanyon de Nomaseda, over the river, making it safely for the first time in two million years. Her house came within view, a hollowed out old tree, large enough for a small family. A smile played across her lips as she reached for the doorknob. The oak door swung open slowly, as she moved into the entry. Clean and tidy, as she’d left it, but something had changed.</p>
+<p>Entering further into the house, Kitty noticed something she hadn’t seen since Etheain moved in. The intricately carved kitchen table that had once been cluttered with spells, maps incantations, and potions from Etheain long days could finally be seen. Any trace of Etheain had disappeared.</p>
+<p>Finally released from her unknown imprisonment, Kitty felt at ease. Something had happened to her in the fey world, when Troi touched her, something had flooded back. Setting down in one of her large chairs by the hearth, she watched the fire flicker to life from cold embers at the base. Kitty felt her eyes close with exhaustion. Fighting to open them, she leaned her head back and glanced to the window. The mountain range overlooked the grassy field, alight with the day’s fire. Across the field came a lone shadow, tall, easy gait, slowing, graceful as a cat. A shy smile crossed her face as her eyes closed once more. So much to achieve, after a good night’s sleep.</p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center">MEMORIES</p>
+<p>Rain drizzled down the window pane as Kitty sat on the couch, watching television, her bowl of popcorn discarded on the floor. In it’s place lay her kitten, Ty, warming her stomach with her purring. Beside her sat April, sweet, naïve April. Honey blonde hair to her shoulders, dark tanned, slightly smaller then slender Kitty. Flinging a strand of fire red hair over her shoulder, Kitty fixed the waist length mop into a messy bun.</p>
+<p>"Come on, Kit!" April exclaimed for the seventh time in half an hour. "It’ll be fun." Kitty shook her head, flicking the channels rapidly. "You may find out about past lives," April continued.</p>
+<p>For the past six months, April had been trying to learn tarot and hypnotism, and now, finally, she felt experienced enough to try it out. Unfortunately, Kitty seemed to be the only one she wanted to practice on. "If I let you try it once, will you leave me alone?" Kitty asked, turning to stare at April, who nodded violently. "Fine," Kitty replied, switching the TV to mute. "But you tell me I was a fly in another life, I’ll tell everyone what a quack you are."</p>
+<p>Overly excited, April went to her bag and pulled out her tarot cards and her bag of crystals. "If we find out about your previous lives, we can hypnotize you to relive your favorite memory of it." Kitty shrugged, sitting down at her dining room table.</p>
+<p>Watching April set up the black velvet table cover, Kitty felt her breath catch in her throat. Suddenly, she wasn’t sure she wanted to do this. But April was ready to begin, pulling cards up off the deck, and laying then down. Slowly, she read off each thing they meant.</p>
+<p>Half-listening, Kitty watched the rain pelting against the glass. It made interesting shapes against the glass, as if trying to communicate. "Are you listening," April’s voice interrupted her thoughts, scattered though they were. Turning her over glazed eyes back to her friend, Kitty nodded. "Good, now watch the swinging crystal," April said, holing one of her large crystals on a chain.</p>
+<p>Startled, Kitty glanced down at the arrangement of cards before her. She gave up, and leaned back in the chair, watching the swinging crystal. Listening to the sweet voice crooning to her, Kitty’s eyes began to droop.</p>
+<p>* * *</p>
+<p>Emerald grasses faded in around her, then trees and several stones. She found herself sitting in the midst of a field, lined with eldwood. Furrowing her brow, Kitty lay down, watching the clouds drift above her. A soft whoosh was heard, and a large dragon settled beside her. Rolling over, Kitty tried to ignore the flop as Tyla lay beside her. "Go away," Kitty muttered.</p>
+<p>"Can’t," Tyla answered softly. When Kitty didn’t roll back over, Tyla continued. "Troi was worried when you stormed out. He sent me to make sure you were all right."</p>
+<p>Growling, Kitty flung herself over, and scowled up at her dragon guardian. "You’re my guardian, you’re supposed to be on my side," she muttered up at the large dragon head hanging above her.</p>
+<p>A frown crept unbidden over Tyla’s face, as she replied, "He’s your garrison, he cares too." Kitty snorted and rolled back over onto her stomach. "Kitara, you get up this instant!" Tyla nearly roared. Kitty didn’t so much as move a muscle. "Kitty," Tyla continued, through gritted teeth. "You’re being childish!"</p>
+<p>"Childish," Kitty screeched, rolling over and leaping to her feet. "I’m allowed to be childish! Haven’t you heard! I’m the All-Seeing Ancient Adolescent!" she screamed, pointing wildly at the Caydon de Desine behind her. "I sit there all day, watching people I don’t know as they live their miserable little lives! Then I come home, and I have to deal with you two! Don’t do this, don’t do that! This isn’t right! No, that’s wrong! Is nothing I do right!"</p>
+<p>A soft voice came from behind her, and she froze. "Everything you do is right, Kitten," he said. Turning slowly, she found Troi standing there, his dark eyes glimmering in the amber skylight. "You just push too hard for acceptance," he finished. Kitty glared at him. "Kitty, I didn’t mean it!"</p>
+<p>"Say it," she whispered to him, "Say it and mean it."</p>
+<p>Troi glanced to Tyla, who nodded. "No one deserves the Realm of the Forgotten," he said softly, watching her. She arched an eyebrow and waited. "Not even Etheain," he finished, looking somewhat subdued. Without another word between them, Kitty started toward the far end of the field, where her house rose, a huge oak tree.</p>
+<p>* * *</p>
+<p>Within the house, Kitty glanced about quickly. Kale, her house gnome, levitated above the stove, stirring the contents of a pot that had come to a boil. "’Ello, Miss Kitara," Kale babbled, looking up to her as she strolled across the kitchen. "Glad to see you back so soon… You’ve had a visitor," he said, as she tasted a bit of the creamy sauce. Her eyebrows rose in unison, and he smiled. "Miss April is upstairs."</p>
+<p>April Heartwood was the heir to the Realm of Stars, and Kitty’s newest friend. Ever since Etheain’s disappearance, Kitty had been taking time off to travel the realms, the ever vigilant Troi by her side, and April had been the first one to invite them both for a drink in the Gateway Of Dragons.</p>
+<p>Jogging up the fourteen stairs to the loft that hung above her kitchen, she found April sitting on her bed, talking into Kitty’s lamp. "Yes, I understand," she was saying. "But I have work to be doing… Of course, the moment I return." She glanced up and saw Kitty smiling at her. "Talk to you when I return, Basil," she said sharply, clicking off the light. "Duty calls," she continued, smiling sheepishly at Kitty.</p>
+<p>April’s realm dealt solely with giving other realms light in the dark. Sometimes they used pure sunshine, like Kitty’s lamps, sometimes firelight, that was mainly for romantic restaurants, and sometimes even star light, for darkened pubs like Gateway.</p>
+<p>The two women embraced, just as Troi jogged up the final stair. Instantly, April spun on him. "What’s wrong with you! Saying that someone deserved to go to the Forgotten! No one deserves that!" April screamed, lunging at Troi.</p>
+<p>"Whoa!" Kitty cried, grabbing April’s waist, yanking her back with surprising strength. "He apologized, April, he apologized!"</p>
+<p>Stopping instantly, April smoothed out her gown of saffron, and replied, with her head high, "In that case, you may live." But she couldn’t remain straight faced; she grinned, causing Troi to laugh. That trademark laugh, so deep, so serene.</p>
+<p>"Dinner!" came a soft and squeaky voice from downstairs.</p>
+<p>Turning to look at April, Kitty joked, "We’ll talk about the long distance call later!" April grinned.</p>
+<p>* * *</p>
+<p>The rich white sauce that Kale had prepared ended up to be a fey dinner. Full course dinner, topped with a red wine. Troi sat across from Kitty, April between them at the stunningly carved cedar table. Kale sat on the table, along with the assortment of salt, pepper, and spices.</p>
+<p>Watching Kitty eat, Troi felt a stirring in his heart. Everyday that went by, she healed a bit more from Etheain’s enslavement. She no longer asked permission to travel to the fey realms for the ingredients she required for her magic, nor did she wait for him before she went to bed. She was growing slowly from the child that Etheain had forced her to be. He didn’t know what all he did to her, but from what he knew , he deserved the Forgotten.</p>
+<p>Kitty and April sat, joking about several of their new friends. April was born from the realm of stars; her long silver hair shone with the fire of a dozen novas, and her dark eyes flickered with firelight. Kitara had been born of the elements. Scarlet hair of the Fire Realm, emerald green eyes of the Earth Realm, skin soft and creamy from the Realm of Air and Sky, her body sculpted of the Realm of the Sea, and the very breath in her body given by the Troika themselves, the gods of the realms.</p>
+<p>Just sitting beside her was enough for him, as he watched her giggle with April. As they finished their dinner, Kale quickly whooshed all the empty dinner plates away. Only seconds later, he followed them into the kitchen, leaving them to the chatter.</p>
+<p>"Tell me about the Forgotten," Troi said, before he realized it. Both girls fell silent, and they didn’t move, until April motioned for Kitty to tell him.</p>
+<p>Kitty shook her head vehemently. "You’ve been there, Kit," April whispered.</p>
+<p>"Only by accident!" Kitty exclaimed. But April gave her another look. "Forgetting is very painful, slowly losing your mind, piece by piece. That’s what the Realm does, it removes your memory bit by bit," Kitty whispered into her cup, just before she took a sip. "It tears a mortal apart." April shuddered in the firelight. "Nobody deserves to have their soul ripped apart," Troi’s eyes fell to his plate, as Kitty finished, "Not even Etheain."</p>
+<p>No one spoke as the fire died to glowing embers. Finally, April quietly excused herself, and left them to their thoughts. Kitty stared at the fire for another ten minutes, then got to her feet, crossed over to her apothecary table to look through her sacks. Moments later, she pulled a powder from a green velvet purse, and strolled to the hearth.</p>
+<p>"Fire, Earth, Air and Water," she muttered, tossing the dust into the flames. "Bring me ‘cross the land of my father to where my mortal heart still beats." Troi turned to see an orb in the fire sweeping across the plains of the mortal realm.</p>
+<p>"Darling," he whispered, reaching to touch her. "Join me when you wish it," he whispered, kissing her forehead. Then he turned and started up the stairs toward the bed loft.</p>
+<p>Kitty sat on the stone flagged floor before the fire, watching the flying orb. In only moments, the orb came to rest above a house not far from her memory. Through the living room window, she could see two girls, sitting, one holding a swaying crystal, the other with her eyes closed. Suddenly, a blinding flash of light from the fire zoomed toward her, and she fell backward, blinking.</p>
+<p>* * *</p>
+<p>"What’d you see?" came April’s excited voice, as Kitty opened her eyes. "Anything?"</p>
+<p>Rubbing her creamy forehead, Kitty picked at the fine red hairs at her hairline. "How long was I out?" she questioned, her voice cracking with exhaustion.</p>
+<p>"Only five minutes," came April’s reply. Snapping awake, Kitty stared hard at the teenager in front of her. "Why?"</p>
+<p>Startled, Kitty glanced around at her living room, the TV still on mute. TRL’s Carson Daly stood on the screen, moving his mouth like a dying fish. A soft purring at her feet made Kitty jump. Glancing down, she found Ty sliding along her leg. "What’d you see?" April asked hungrily.</p>
+<p>"You were there, in this beautiful realm. Ty was a dragon, you were heiress to a realm," Kitty said, glancing around the room again.</p>
+<p>Rummaging in the kitchen made her whip around in time to see her little brother, Cale, come from the swinging door, sandwich in hand. "Keep your boyfriend in check, sis," he said, heading for the stairs.</p>
+<p>Moments later, Troy came from the same door, carrying a similar sandwich. "Saw Ethan today," he said.</p>
+<p>"Oh… What’d he do," April begged, losing interest in Kitty for a second.</p>
+<p>A laugh rebounded from Troy’s throat as he replied, "What would you do if your ex girlfriend’s impressive new boyfriend came into your view?" April shrugged. "He walked a large circle around me, then darted behind a friend." He bent over to kiss Kitty, who seemed to be in a daze. "What’s wrong with her?" he asked.</p>
+<p>Turning back to her friend, April went to speak but Kitty beat her to it. "When April hypnotized me, I saw you, and April, Ty was a dragon, Cale was a gnome, Ethan had been banished to something that resembled hell…."</p>
+<p>"We’re not in Kansas anymore, Toto…" Troy joked, a smile on his face. When Kitty didn’t smile, he spun towards April. "You hypnotized her! Are you nuts!" April looked surprised. "Who knows what she saw!"</p>
+<p>"I told you," Kitty whispered, "I saw you, April, Cale, and Ty. Ethan had been banished to the Realm of the Forgotten, and you were my garrison… whatever that is." Troy and April exchanged glances, just before Kitty passed out.</p>
+<p>As Troy carried her to the couch, he looked to April and said, "At least she remembers us now…" April nodded calmly, conjuring a wet washcloth from thin air.</p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center"></p>
+<p style="text-align:center">ONE LAST LOOK</p>
+<p>As I stand before the Lake of Kalmeesha I look out at the sun as it sets. Every night it looks like this, a desolate, barren existence. The men in my life have been gone for nearly a millennia now. For that entire time I have been alone in my realm. When Etheain went up against Troi to protect me he changed the course of history and saved my life forever.</p>
+<p>But now I’m alone in this realm, lost in the tides of time, strewn across the white caps of the past. The only company I keep are my friends, and even they are kept at their distance these days. Tyla sits on the cliff above my home, she watches as I leave for work, and she’s there when I return. Kale still cooks dinner for me, and April visits on occasion.</p>
+<p>My world has faded into nothingness, the only existence I have now is living in the other Realms, living other’s lives. Now, as I stand here the sun sets, kissing the horizon with such fire that it sets the ground aflame with color and passion. Tyla lies above me, her great claws stretched out toward the ground like million year old rocks.</p>
+<p>Darkness falls over my tiny world, leaving it in silence and despair. I make my way across the river to my tree house. Sometimes, when I step within the heavy oak door I fall back into the days when Etheain used to beat me home, and have a fire waiting for when I stepped from the frigid air. He would drop a blanket around my shoulders, and lead me to a chair before the fire.</p>
+<p>Sometimes I hear his voice inside the house, laughing with April or Kale. But when I open the door there is no one there, no one but me and my shadow. Sometimes, if I close my eyes as I hop across the river I can hear him whistling behind the house, gathering seasonings from the garden. Sometimes, I’ll catch a voice on the wind, and I’ll feel the familiar tingle run down my spine, I’ll know he’s there. His song echoes in my ears, a haunting trail of memories mingled with what used to be. But at the end of the day it’s just me, and my shadow.</p>
+<p>Today I don’t step into an empty house, Kale is there, sitting on the countertop. I’ve known Kale for longer then forever. He and his wife Elva, live under a rock in my garden. Kale has been cooking for me since Etheain vanished, and Elva checks in on the housework almost every day. Every once in awhile, I’ll hear them whispering about my health since Etheain left. Health, ha, I’ve never been sick. I don’t need to eat, it’s more of a luxury. When the Troika created me of the elements they forged me to never need replenishment, nor sleep. These are just routines I got into after all my years with Etheain. But for the past four thousand years or so I haven’t really had an appetite.</p>
+<p>Upstairs, I trudge, taking only a bite or two from the steaming plates before me. I hear Kale’s worried squeak, and I realize that soon Elva will be calling on me to make sure I’m all right. In my loft I find my bed turned down, and I feel the loneliness overwhelm me once again. Getting onto my knees I check under the bed for pixies, not wanting any of their antics tonight. Etheain would always laugh at me for checking, and nothing he said would keep me from looking.</p>
+<p>Sighing, I plop myself down on the cloud spun sheets and silken pillows. I can hardly believe that only a millennia ago I shared this bed with the only man I’ve ever loved. Where is Etheain now?</p>
+<p>That question overtook me. Was he returned to the mortal realm, two thousand years after his birth? What kind of world would he be returned to? Did he remember me until the day he died, or did he forget me, pass me off as some phantom of a dream? Perhaps I would never find out, perhaps I would never know. I think I’d rather believe that he loved me and let go. I don’t want him to suffer his loss as I suffer mine.</p>
+<p>A part of me wants to slip between the sheets and let the problems of the day slip from me like water from the scales of dragons, and yet I am restless. Deciding against bed, I draw out my cloak from the closet and head downstairs once again. Kale glances up from the table, where he’s organizing notes twice as big as him, but he doesn’t speak.</p>
+<p>The sweet scent of nightfall drifts to me as my feet carry me out along the fields. Soft clad moccasins pad through fragrant grasses, closing the distance between me and Nowhere. Stars twinkle above me, more then anyone could name, and each of them are watching me as I flee.</p>
+<p>As I run I feel the eyes of the fey around me, watching my every move. They’ve been doing that since Etheain’s disappearance. No one seems to think that I can handle the loneliness that was left in Etheain’s stead. But then again, I am one of those people. Ever since he vanished I have felt lost within a storm, without a beacon of light to lessen the waves of sadness. The stars are the only friends I have, shining brightly in a world of dark and misery. But I must continue through the storm, for I am a lighthouse, and I must lead souls home.</p>
+<p>Entering into my forest I fall to my knees beside my pool of enlightenment. Tears sting my eyes as I manage to choke out, “Etheain Meriwether, on the day of his demise…”</p>
+<p>The surface ripples, moving a soft fog over the silver waters. There, in the water I see the face I grew so fond of. But Etheain’s dark hair has been replaced by a crown of silver, and his eyes shine with tired vivacity. The once taunt flesh that defined the noble brow and dashing cheeks has tattered and creased. But those sapphire eyes still hold within them the knowledge of a million realms, and glimmer of unspoken mystery, the air of insight, of magic.</p>
+<p>I know him the moment I see him, the feeling grows tight in my chest. He would have been only twenty-one when he returned to the mortal realm. Did he marry? Sire children? Perhaps grandchildren?</p>
+<p>There was someone holding his hand, and I can see her delicate fingers twisting themselves around in his hand. Softly, a voice came over the wind, a voice that sounded of bells and chimes. “Dad, what was it you told me when I was small. The Soulkeeper, tell me of that legend…” she said, squeezing his hand.</p>
+<p>A spark lit behind his eyes, and he began, “I remember when I first saw her. Hair, red as flame, eyes blue as ice, skin soft as roses. Her life had already been too long, but nothing in all the world could have stopped her from living it. She dedicated every moment to mortals, loving them, trusting them, keeping them safe. She was beautiful, a real angel. Not one of these flighty phantoms in movies and books, but a goddess in mortal form.”</p>
+<p>In a flash of pain, his hand spasmed, and he closed his eyes briefly. I force myself to focus, to remove the pain, but it was too strong. I felt his heart failing, and I watch as his eyes begin to droop.</p>
+<p>“I’d give it all up, this life, this world, for one more look into her ice blue eyes…” he whispered, staring up, almost directly at me. And in one last shaft of support I managed to diminish the pain. Those familiar eyes lifted up and his lips formed the words perfectly, “Thank-you, Kitten…” Then his eyes locked on to mine and he smiled that perfect smile. He was gone.</p>
+<p>It was only then that I looked at the woman beside him. Her face lifted toward heaven, and she whispered, “Take care of him, Kitty… He always loved you…” And I was astonished to discover that she had fire red hair, ice blue eyes, and rose petal soft skin.</p>
+<p>Silently, I move from the woods around me, and head slowly across the fey glimmered fields toward home. On the wind I hear his voice, and feel his eyes upon me. His song echoes in my ears, a haunting trail of memories mingled with what used to be. Hopping across the river, I find myself standing at my front door. No voices recoil from within the house. Now it really is just me and my shadow…</p>
+</div>
+</div>
+</body>
+</html>

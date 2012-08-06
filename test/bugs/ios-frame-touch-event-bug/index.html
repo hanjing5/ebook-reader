@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="common.css" />
+    <title>Bug: touch events on iframes and overlapping elements</title>
+  </head>
+
+  <body id="body">
+
+    <div class="description">
+      <h1>Bug: touch events on iframes and overlapping elements</h1>
+      <p class="agents">
+        Observed in MobileSafari for all iOS versions, different in 4.1.
+      </p>
+
+      <p>
+        <strong>Description of bug:</strong>
+        Touch events on iframes are broken in all versions of iOS: if
+        an element sits over an iframe, touch events will fire on the iframe
+        underneath - which is incorrect, and differs from WebKit mouse event
+        behaviour.
+      </p>
+      <p>
+        In iOS 4.1, the behaviour is much worse: <em>touchend</em> events are
+        not fired at the correct time, and unpaired <em>touchstart</em> events
+        fire on lower DOM elements and higher z-index elements at the end
+        of a touch.
+      </p>
+      <p>
+        There are several tests in this suite:
+      </p>
+
+      <ul>
+        <li><a href="1.html">A single iframe</a></li>
+        <li><a href="2.html">An iframe with an overlapping div</a></li>
+        <li><a href="3.html">Two overlapping iframes, with a div above</a></li>
+      </ul>
+
+      <p>
+        NB: in all the tests, you can tap on the coloured event output
+        to start a new "event section".
+      </p>
+
+      <p>
+        Here's the test of Monocle's solution to this bug:
+      </p>
+
+      <ul>
+        <li><a href="touchmonitor.html">TouchMonitor</a></li>
+      </ul>
+
+    </div>
+  </body>
+
+</html>

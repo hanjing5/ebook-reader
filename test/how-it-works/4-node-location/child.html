@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Problem</title>
+
+    <link rel="stylesheet" href="../columned.css" />
+    <style>
+      #trans {
+        transform: translateX(-600px);
+        -webkit-transform: translate3d(-600px, 0, 0);
+        -moz-transform: translateX(-600px);
+        -o-transform: translateX(-600px);
+      }
+
+      .beacon {
+        background: #FFB;
+        padding: 3px;
+        color: #F90;
+        font-style: italic;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        -webkit-box-shadow: 0px 0px 10px #FFB;
+        -moz-box-shadow: 0px 0px 10px #FFB;
+        box-shadow: 0px 0px 10px #FFB;
+      }
+
+      .break {
+        display: block;
+        padding-bottom: 220px;
+      }
+    </style>
+  </head>
+
+  <body id="trans">
+    <div style="font: 24px serif;">
+      This text should <span class="beacon">appear</span> in the first column.
+      <div class="break"></div>
+      This <span class="beacon">text</span> should appear in the second column.
+      <div class="break"></div>
+      This text should appear in the third column.
+      <div class="break"></div>
+      This text should appear in the fourth column.
+      <div class="break"></div>
+    </div>
+    <div style="font: 15px serif; text-align: center;">
+      The <span class="beacon">final</span> text appears in column five.<br />
+    </div>
+  </body>
+</html>
